@@ -1,0 +1,5 @@
+NAME="Local - Pornography"
+ENABLED="true"
+CATEGORY="blacklist_pornography"
+INPUT="./source-local-list.d/porno.list.src"
+FORMAT_ADGUARD="true"

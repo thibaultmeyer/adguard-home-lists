@@ -1,0 +1,5 @@
+NAME="Local - Games"
+ENABLED="true"
+CATEGORY="whitelist_games"
+INPUT="./source-local-list.d/games.list.src"
+FORMAT_ADGUARD="true"

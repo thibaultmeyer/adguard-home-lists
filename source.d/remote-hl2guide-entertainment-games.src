@@ -1,0 +1,5 @@
+NAME="Remote - hl2guide - Games"
+ENABLED="true"
+CATEGORY="whitelist_games"
+INPUT="https://raw.githubusercontent.com/hl2guide/AdGuard-Home-Whitelist/main/Modules/Entertainment/games_whitelist.txt"
+FORMAT_ADGUARD="true"

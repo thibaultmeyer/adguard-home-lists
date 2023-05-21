@@ -1,0 +1,12 @@
+NAME="Remote - Services Publics FR"
+ENABLED="true"
+CATEGORY="whitelist_services-publics-fr"
+INPUT="https://www.data.gouv.fr/fr/datasets/r/24848dc0-e16c-4ce8-94d9-24bc6304c9b6"
+FORMAT_ADGUARD="false"
+
+
+function parse_entry {
+
+    tmp=$(echo "${1}" | LC_ALL=C tr '\t' ' ' | LC_ALL=C cut -d' ' -f1 | LC_ALL=C sed 's/www./||/g')
+    echo "${tmp}^"
+}

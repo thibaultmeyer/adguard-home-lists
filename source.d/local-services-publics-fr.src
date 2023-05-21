@@ -1,0 +1,5 @@
+NAME="Local - Services Publics FR"
+ENABLED="true"
+CATEGORY="whitelist_services-publics-fr"
+INPUT="./source-local-list.d/services-publics-fr.list.src"
+FORMAT_ADGUARD="true"

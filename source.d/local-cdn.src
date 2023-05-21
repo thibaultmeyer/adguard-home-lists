@@ -1,0 +1,5 @@
+NAME="Local - Content Delivery Network (CDN)"
+ENABLED="true"
+CATEGORY="whitelist_cdn"
+INPUT="./source-local-list.d/cdn.list.src"
+FORMAT_ADGUARD="true"

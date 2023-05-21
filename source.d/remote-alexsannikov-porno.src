@@ -1,0 +1,5 @@
+NAME="Remote - alexsannikov - Pornography"
+ENABLED="true"
+CATEGORY="blacklist_pornography"
+INPUT="https://raw.githubusercontent.com/alexsannikov/adguardhome-filters/master/porn.txt"
+FORMAT_ADGUARD="true"

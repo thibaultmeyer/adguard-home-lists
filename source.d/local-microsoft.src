@@ -1,0 +1,5 @@
+NAME="Local - Microsoft"
+ENABLED="true"
+CATEGORY="whitelist_microsoft"
+INPUT="./source-local-list.d/microsoft.list.src"
+FORMAT_ADGUARD="true"

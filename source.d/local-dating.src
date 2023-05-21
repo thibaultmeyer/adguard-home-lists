@@ -1,0 +1,5 @@
+NAME="Local - Dating"
+ENABLED="true"
+CATEGORY="blacklist_dating"
+INPUT="./source-local-list.d/dating.list.src"
+FORMAT_ADGUARD="true"
