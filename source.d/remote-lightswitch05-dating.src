@@ -7,19 +7,5 @@ FORMAT_ADGUARD="false"
 
 function parse_entry {
 
-    local -r entry_cleaned=$(echo "${1}" | LC_ALL=C tr '\t' ' ' | LC_ALL=C cut -d' ' -f2)
-
-    IFS='.' read -ra tokenArray <<< "${entry_cleaned}"
-    dot_counter="${#tokenArray[@]}"
-
-    if [ "${dot_counter}" -eq 0 ]
-    then
-        echo ""
-    elif [ "${dot_counter}" -le 2 ]
-    then
-        echo "||$(IFS='.' ; echo "${tokenArray[*]}")^"
-    else
-        dot_cut=$((dot_counter - 2))
-        echo "||${tokenArray[dot_cut]}.${tokenArray[dot_cut + 1]}^"
-    fi
+    echo "${1}" | LC_ALL=C tr '\t' ' ' | LC_ALL=C cut -d' ' -f2
 }
