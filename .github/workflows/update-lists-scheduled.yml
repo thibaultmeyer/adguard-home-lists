@@ -1,0 +1,29 @@
+name: Update lists
+
+on:
+    schedule:
+        -   cron: '0 2 * * *'
+
+jobs:
+    release:
+        name: Update Lists
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout repository
+                uses: actions/checkout@v3
+
+            -   name: Configure Git
+                run: |
+                    git config --global user.name 'Thibault Meyer'
+                    git config --global user.email 'thibaultmeyer@users.noreply.github.com'
+                    git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
+
+            -   name: Release lists
+                run: |
+                    bash ./update.sh
+
+            -   name: Commit & Push
+                run: |
+                    git add .
+                    git diff-index --quiet HEAD || git commit -m "`date '+%Y-%m-%d'`"
+                    git push
