@@ -1,3 +1,8 @@
 ||akamai.net^
 ||akamaiedge.net^
 ||akamaized.net^
+||cloudflare.com^$denyallow=csp-reporting.cloudflare.com
+antidote.b-cdn.net
+cdn.discordapp.com
+cdn.jsdelivr.net
+cdn.sstatic.net
